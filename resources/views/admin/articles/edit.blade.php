@@ -13,7 +13,7 @@
         <form class="form-horizontal" action="{{route('admin.article.update', $article)}}" method="post">
             @method('put')
             @csrf
-            @include('admin.user_managment.users.partials.form')
+            @include('admin.articles.partials.form')
             <input type="hidden" name="modified_by" value="{{Auth::id()}}">
         </form>
 
